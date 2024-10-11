@@ -6,8 +6,60 @@
 using namespace std;
 int k;
 int q[30];
-int main(){
-    while(cin >> k && k){
-        for()
+bool jdg(){
+    int tag = 1;
+    for(int i = 0; i < k; i++){
+        tag &= q[i];
     }
+    if(tag) return true;
+    else{
+        int tag1 = 0;
+        for(int i = k; i < 2*k; i++){
+            tag1 |= q[i];
+        }
+        if(!tag1)   return true;
+        else    return false;   
+    }
+}
+int main(){
+    cout << "helloworld" << endl;
+    /*fill(q, q + 2*k, 1);
+    for(int i = 0; i < 2*k; i++){
+        cout << q[i] << endl;
+    }
+    int m = k, idx = 0, cnt = 0;
+        while(1){
+            cout << idx << endl;
+            if(q[(++idx) % 2*k] == 0){
+                ++idx;
+            }else{
+                if(++cnt == m){
+                    idx %= 2*k;
+                    q[idx] = 0;
+                }
+            }
+            if(jdg())   break;
+            else    m++;
+        }*/
+    //cout << m << endl;
+    /*while(cin >> k){
+        if(k == 0)  break;
+        fill(q, q + 2*k, 1);
+        int m = k, idx = 0, cnt = 0;
+        while(1){
+            cout << idx << endl;
+            if(q[(++idx) % 2*k] == 0){
+                ++idx;
+            }else{
+                if(++cnt == m){
+                    idx %= 2*k;
+                    q[idx] = 0;
+                }
+            }
+            if(jdg())   break;
+            else    m++;
+        }
+        cout << m << endl;
+    }*/
+    return 0;
 }
