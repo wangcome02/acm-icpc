@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"c:\\Users\\Administrator\\Desktop\\acm-icpc\\一\\E. Ants.cpp","tests":[{"id":1728730946380,"input":"2\n10 3\n2 6 7\n214 7\n11 12 7 13 176 23 191","output":"4 8\n38 207"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Administrator\\Desktop\\acm-icpc\\一\\E. Ants.cpp","group":"local","local":true}
